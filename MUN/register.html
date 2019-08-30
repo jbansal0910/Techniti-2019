@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.axisvnit.org/MUN/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Apr 2019 06:41:15 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MUN Registration</title>
+  
+  <link rel="icon" type="image/ico" href="images/favlogo.png">
+
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong:300,400,400i,500,600,700" />
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+    body:after{
+        content:"";
+        position:fixed; /* stretch a fixed position to the whole screen */
+        top:0;
+        height:100vh; /* fix for mobile browser address bar appearing disappearing */
+        left:0;
+        right:0;
+        z-index:-1; /* needed to keep in the background */
+        
+        background-image: url('images/bg.jpg'); 
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-position: center center;
+    }
+  </style>
+
+</head>
+
+<body style="background-color: black;">
+
+  <center>
+    <div class="loginBUTTON"></div>
+    <div class="axisLOGIN" style="visibility: hidden;font-size: 22px;color: white;">    
+      <span class="glyphicon glyphicon-user" style="border: 1px solid gray;border-radius: 50%;padding: 10px;"></span>
+      <span style="font-size: 15px;" class="clientName" id="clientName"></span>
+      <br>
+      <span style="font-size: 15px;" class="techNITi19id" id="techNITi19id"></span>
+    </div>
+  </center>
+
+  <div class="container">
+    <center>
+      <div style="font-family:nexagold;font-size: 40px;color: white;">techNITi19 MUN REGISTRATION<hr></div>
+    </center>
+
+    <div style="visibility: hidden;" id="myRegistrations" class="myRegistrations">
+      <center>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkNP8tiVkWObpA7yk4XHVdQbci2pgMBOK3Ko4jPwTAc_828A/viewform?embedded=true" width="640" height="2255" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </center>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+  <script src="../js/login.js" ></script>
+
+  <script type="text/javascript">
+    if (typeof(Storage) !== "undefined")
+    {
+      sessionStorage.setItem("path", "MUN/register.html");
+      sessionStorage.setItem("formPath","../form.html");
+    }
+
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+               
+        }
+        else
+        {       
+          login();
+        }
+    });
+    
+  </script>
+  
+</body>
+
+
+<!-- Mirrored from www.axisvnit.org/MUN/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Apr 2019 06:41:16 GMT -->
+</html>

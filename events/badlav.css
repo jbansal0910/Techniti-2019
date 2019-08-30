@@ -1,0 +1,206 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: -webkit-fill-available;
+  /* height: 100vh; */
+  /* background-color: #ecf0f9; */
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(http://happenings.lpu.in/wp-content/uploads/2016/09/o-INDIAN-GIRLS-SMILING-facebook.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing:border-box;
+  color:white;
+  font-family: 'Livvic', sans-serif;
+  overflow-x:hidden;
+  line-height:200%;
+}
+.row{
+	height:180%;
+	width:240px;
+	box-sizing:border-box;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+	padding-top:20px;
+	padding-left:20px;
+}
+.list1 li{
+	list-style:none;
+	margin-top:20px;
+}
+.list1 li a, .butn{
+	text-decoration:none;
+	color:grey;
+	border-radius:200px;
+	border: 2px solid grey;
+	padding:10px 10px;
+}
+.container{
+	display:flex;
+	flex-flow:column wrap;
+}
+.main1{opacity:1}
+.main,.main1{
+	position: relative;;
+	top:0px;
+	
+	
+	box-sizing:border-box;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+	padding:30px 40px;
+	margin-bottom:12px;
+	
+}
+.heading{
+	color:white;
+	font-size:300%;
+	margin:auto;
+
+}
+.main2{
+	position:absolute;
+	top:170px;
+	
+	
+	box-sizing:border-box;
+	width:auto;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+	padding:10px 40px;
+}
+.head2{
+	border-bottom: 2px solid grey;
+}
+.main3{
+	position:absolute;
+	top:380px;
+	
+	
+	box-sizing:border-box;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+	padding:10px 40px;
+}
+.main4{
+	position:absolute;
+	top:760px;
+	
+	
+	box-sizing:border-box;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+	padding-right:  40px;
+	padding-left:40px;
+}
+.button{
+float:center;
+border:0;
+outline:none;
+width:110px;
+height:40px;
+margin-right:7%;
+
+bottom:10px;
+border-radius: 15px;
+background-color: #0388fc;
+font-weight:bolder;
+
+
+}
+.button:hover{
+	background-color: darkblue;
+
+cursor: pointer;
+
+}
+.reg{
+	color: aliceblue;
+	text-decoration: none;
+}
+.hila{
+	display:flex;
+	flex-wrap:wrap;
+	margin-right:10%;
+	
+}
+
+.main,.main2,.main3,.main4	
+		{
+		opacity:0.8;
+		line-height:40px;
+		}
+	.main:hover,.main2:hover,.main3:hover,.main4:hover
+		{
+		transform: scale(1.005);
+		transition-duration: 200ms;
+		transition-timing-function: ease-in-out;
+		opacity:1;
+		}
+@media only screen and (max-device-width: 600px)
+{
+
+	.container{
+		display: block;
+		margin:auto;
+		float:none;
+		
+	}
+	.button{
+		margin-left: 20px;
+	}
+	
+	.main,.main1{
+		position:relative;
+		text-align:center;
+		display: block;
+			margin:auto;
+		margin-top:15px;
+		margin-bottom:15px;
+
+		box-sizing:border-box;
+		width:100%;
+		background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+		padding:20px 40px;
+		
+	}
+	
+	.main2{
+		position: relative;
+		display: block;
+		margin: auto;
+		margin-top:30px;
+		
+		
+		
+		box-sizing:border-box;
+		width:auto;
+		background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+		padding:20px 40px;
+	}
+	.main3{
+		position: relative;;
+		
+		
+		
+		box-sizing:border-box;
+		width:auto;
+		background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+		padding:20px 40px;
+	}
+	.main4{
+		position:relative;
+		
+		
+		
+		box-sizing:border-box;
+		width:100%;
+		background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+		padding:20px 40px;
+	}
+
+
+
+}

@@ -1,0 +1,270 @@
+<link href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="../code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from www.axisvnit.org/form.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Apr 2019 06:37:58 GMT -->
+<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- Website Font style -->
+		<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+		<title>Admin </title>
+		<style type="text/css">
+			/*
+		/* Created by Filipe Pina
+		 * Specific styles of signin, register, component
+		 */
+		/*
+		 * General styles
+		 */
+		#playground-container {
+		    height: 500px;
+		    overflow: hidden !important;
+		    -webkit-overflow-scrolling: touch;
+		}
+		body, html{
+		    height: 100%;
+		 	font-family: 'Oxygen', sans-serif;
+		    background-size: cover;
+		    background-color: black;
+		}
+
+		.main{
+		 	margin:50px 15px;
+		}
+
+		h1.title { 
+			font-size: 50px;
+			font-family: 'Passion One', cursive; 
+			font-weight: 400; 
+		}
+
+		hr{
+			width: 10%;
+			color: #fff;
+		}
+
+		.form-group{
+			margin-bottom: 15px;
+		}
+
+		label{
+			margin-bottom: 15px;
+		}
+
+		input,
+		input::-webkit-input-placeholder {
+		    font-size: 11px;
+		    padding-top: 3px;
+		}
+
+		.main-login{
+		 	background-color: #fff;
+		    /* shadows and rounded borders */
+		    -moz-border-radius: 2px;
+		    -webkit-border-radius: 2px;
+		    border-radius: 2px;
+		    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+		}
+		.form-control {
+		    padding: 8px 12px !important;
+		}
+		.input-group {
+		    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+		    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+		    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+		}
+		#button {
+		    border: 1px solid #ccc;
+		    margin-top: 28px;
+		    padding: 6px 12px;
+		    color: #666;
+		    text-shadow: 0 1px #fff;
+		    cursor: pointer;
+		    -moz-border-radius: 3px 3px;
+		    -webkit-border-radius: 3px 3px;
+		    border-radius: 3px 3px;
+		    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+		    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+		    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+		    background: #f5f5f5;
+		    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+		    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+		    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+		    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+		    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+		    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+		}
+		.main-center{
+		 	margin-top: 30px;
+		 	margin: 0 auto;
+		 	max-width: 600px;
+		    padding: 10px 40px;
+			background:#009edf;
+			    color: #FFF;
+		    text-shadow: none;
+			-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+		-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+		}
+		span.input-group-addon i {
+		    color: #009edf;
+		    font-size: 17px;
+		}
+
+		.login-button{
+			margin-top: 5px;
+		}
+
+		.login-register{
+			font-size: 11px;
+			text-align: center;
+		}
+	</style>
+	</head>
+	<body>
+		<center>
+			<div class="loginBUTTON"></div>
+			<div class="myRegistrations"></div>
+            <div class="axisLOGIN" style="visibility: hidden;font-size: 22px;color: white;">    
+			  <span style="color:aqua;">NAME : </span><span style="font-size: 20px;" class="clientName" id="clientName"></span>
+              <br>
+              <span style="color:aqua;"></span><span style="font-size: 20px;" class="techNITi19id" id="techNITi19id"></span>
+            </div>
+		</center>
+
+
+		<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				<center><h2>Sign up</h2></center>
+					<form method="post" name="myForm" autocomplete onsubmit="return validate()">
+					
+						<div class="form-group">
+							<label for="gender" class="cols-sm-2 control-label">Gender</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+									<select name="gender" class="form-control" id="gender" required>
+									    <option value="Male">Male</option>
+									    <option value="Female">Female</option>
+								    </select>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="form-group">
+							<label for="dob" class="cols-sm-2 control-label">DOB</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+									<input type="date" class="form-control" name="dob" id="dob"  placeholder="Enter your date of birth" required />
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="form-group">
+							<label for="college" class="cols-sm-2 control-label">College</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-education" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="college" id="college"  placeholder="Enter your College" required />
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phone1" class="cols-sm-2 control-label">Phone No</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i></span>
+									<input type="number" class="form-control" name="phone1" id="phone1"  placeholder="Enter your phone no" required />
+								</div>
+							</div>
+						</div>
+
+						<!-- 						
+						<div class="form-group">
+							<label for="phone2" class="cols-sm-2 control-label">Confirm No</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i></span>
+									<input type="number" class="form-control" name="phone2" id="phone2"  placeholder="confirm your phone" required />
+								</div>
+							</div>
+						</div>
+						-->
+
+						<!-- 						
+						<div class="form-group">
+							<label for="zipcode" class="cols-sm-2 control-label">Zip Code</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-pencil" aria-hidden="true"></i></span>
+									<input type="number" class="form-control" name="zipcode" id="zipcode"  placeholder="Enter Zip code" required />
+								</div>
+							</div>
+						</div>
+						-->
+						<div class="form-group">
+							<label for="city" class="cols-sm-2 control-label">City</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="city" id="city"  placeholder="Enter your city" required />
+								</div>
+							</div>
+						</div>
+
+						<!-- 
+						<div class="form-group">
+							<label for="country" class="cols-sm-2 control-label">Country</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-globe" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="country" id="country"  placeholder="Enter your country" required />
+								</div>
+							</div>
+						</div> -->
+
+
+						<div class="form-group ">
+							<button type="submit" id="button" class="btn btn-primary btn-lg btn-block login-button" name="submit">Sign Up</button>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+ 
+
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="../www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+		<script src="js/login.js" ></script>
+	</body>
+
+<!-- Mirrored from www.axisvnit.org/form.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Apr 2019 06:38:02 GMT -->
+</html>

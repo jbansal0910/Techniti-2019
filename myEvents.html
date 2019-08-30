@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.axisvnit.org/myEvents.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Apr 2019 06:30:47 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>My Registrations</title>  
+
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/ico" href="images/favlogo.ico">
+  <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="../cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/css/mdb.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/myStyle.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+
+  <style type="text/css">
+    ::placeholder {
+      color: white;
+    }
+    body
+    {
+
+        background-image: linear-gradient(-45deg, #1F202E, #031F0E, #13071E, #030106);
+        height: -webkit-fill-available;       
+        background-repeat: no-repeat;
+    }
+    .heading{
+      font-family: nexabold;
+      font-size: 30px;
+      margin-top: 50px;
+      color: white;
+      text-align: center;
+    }
+    .eventsName{
+      font-family: nexalight;
+    	margin-top: 10px;
+      font-size: 20px;
+      color: white;
+    }
+    .info{
+      text-align: center;
+      font-size: 20px;
+      font-family: nexalight;
+      margin-top: 70px;
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="info">
+    <div id="name">NAME</div>
+    <div id="id">ID</div>
+    <div id="email">EMAIL</div>
+  </div>
+
+  <div class="container">
+    <div id="myEvent" class="myEvent">  
+      
+    </div>  
+  </div>
+
+  <div style="" class="container">
+    <div id="myLect" class="myLect">  
+      
+    </div>  
+  </div>
+
+  <div style="" class="container">
+    <div id="workshop" class="workshop">  
+      
+    </div>  
+  </div>
+  
+	
+    <div class="navlog active" title="navbar" onclick="openNav()">
+      <a href="#"><i class="icon-menu"></i></a>
+    </div>
+    <div class="googin loginBUTTON" title="login">
+      <a href="#!" onclick="login()">
+        <!-- <i class="icon-google"></i> -->
+        Sign in
+      </a>
+    </div>
+    <div class="logon axisLOGIN" id="axisLOGIN" title="user">
+      <div class="dropdown">
+        <a href="#" class="dropbtn"><i class="icon-user"></i></a>
+        <div class="dropdown-content">
+          <div style="text-align: center;"><span class="clientName" id="clientName" title="name"></span></div>
+          <div style="text-align: center;"><span class="techNITi19id" id="techNITi19id" title="axis id"></span></div>
+          <div style="text-align: center;"><button onclick="logout()" class="logout" title="logout">LOGOUT</button></div>
+        </div>
+      </div>
+    </div>
+
+	<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div onclick="showMyRegistrations('myEvents.html')">
+          <a href="#!" class="navLink myRegistrations" style="visibility: hidden;"><i class="icon-user"></i> My Registration</a>
+        </div>
+        
+        <a href="index-2.html" class="navLink"><i class="icon-home"></i> Home</a>
+        <a href="events/category.html" class="navLink"><i class="icon-star"></i> Events</a>
+        <a href="MUN/index.html" target="__blank"  class="navLink"><i class="icon-globe"></i> MUN</a>
+        <a href="guestLectures.html" class="navLink"><i class="icon-bag"></i> Guest Lectures</a>
+        <a href="workshop.html" class="navLink"><i class="icon-list"></i> Workshops</a>
+        <a href="comingsoon.html" class="navLink"><i class="icon-grid"></i> Attractions</a>
+        <a href="comingsoon.html" class="navLink"><i class="icon-star"></i> Exhibitons</a>
+        <a href="sponsors.html" class="navLink"><i class="icon-address"></i> Our Proud Sponsors</a>
+        <a href="social.html" class="navLink"><i class="icon-help"></i> Social Initiatives</a>
+        <a href="comingsoon.html" class="navLink"><i class="icon-document"></i> Blogs</a>
+        <a href="sponsors2.html" class="navLink"><i class="icon-address"></i> Previous Sponsors</a>
+        <a href="Contact/contact.html" class="navLink"><i class="icon-users"></i> Our Team</a>
+        <div class="dropup">
+        <a href="#!" class="navLink" class="dropbtn2"><i class="icon-home"></i> Accommodation</a>
+        <div class="dropup-content2">
+          <a href="https://drive.google.com/file/d/1g5RW8WkpBogooHKQDR3WBKAj24IwIbB1/view?usp=sharing" target="_blank">ACCOMMODATION POLICY</a>
+          <a href="https://bit.ly/2PzXiyV" target="_blank">ACCOMMODATION FORM</a>
+        </div>
+        </div>
+
+        <a href="https://goo.gl/forms/i3w23TlcnlwrOdfM2" target="_blank" class="navLink" style=""><img src="images/shirt1.jpg" style="height: 60px;width: 60px;border-radius: 50%;"> T-SHIRT </a>
+        
+
+        <br>
+        <a href="https://www.facebook.com/axisvnit" target="_blank" class="navSocial" ><i class="icon-facebook"></i></a>
+        <a href="https://www.instagram.com/axis_vnit/" target="_blank" class="navSocial" ><i class="icon-instagram"></i></a>
+        <a href="https://www.youtube.com/user/techNITi19VNIT" target="_blank" class="navSocial"><i class="icon-youtube"></i></a>
+        <a href="https://in.linkedin.com/company/axis-vnit-nagpur" target="_blank" class="navSocial"><i class="icon-linkedin"></i></a>
+    </div>
+  <script type="text/javascript">
+    if (typeof(Storage) !== "undefined")
+    {
+      sessionStorage.setItem("path", "myEvents.html");
+      sessionStorage.setItem("formPath","form.html");
+    }
+  </script>
+  <script src="../www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>  
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="events/registration.js"></script>
+  <script type="text/javascript">
+    myRegistrations();
+  </script>
+  <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/js/mdb.min.js"></script>
+
+</body>
+
+
+<!-- Mirrored from www.axisvnit.org/myEvents.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Apr 2019 06:30:47 GMT -->
+</html>
